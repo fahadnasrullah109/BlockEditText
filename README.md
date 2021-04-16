@@ -22,23 +22,14 @@ a dependency:
 <dependency>
   <groupId>com.infideap.blockedittext</groupId>
   <artifactId>block-edittext</artifactId>
-  <version>0.3.1</version>
+  <version>0.3.1</version> 
   <type>pom</type>
 </dependency>
 ```
 #### Gradle
 ```groovy
 dependencies {
-   implementation 'com.infideap.blockedittext:block-edittext:0.3.1'
-}
-```
-
-if **the gradle unable to sync**, you may include this line in project level gradle,
-```groovy
-repositories {
- maven{
-   url "https://dl.bintray.com/infideap2/Block-EditText"
- }
+   implementation 'com.github.fahadnasrullah109:BlockEditText:Latest-Version'
 }
 ```
 
@@ -56,7 +47,7 @@ you can include it by **download this project** and **import /blockedittext** as
     app:inputType="Integer"
     app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
     app:hint="TAC"
-    app:textSize="24sp"
+    app:fontTextSize="24sp"
     android:layout_width="300dp"
     app:editTextBackground="@drawable/selector_edittext_round_border"
     android:layout_height="wrap_content" />

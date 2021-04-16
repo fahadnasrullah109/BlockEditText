@@ -119,7 +119,7 @@ class BlockEditText : FrameLayout {
                 separatorTextAppearance
         )
         textSize = a.getDimension(
-                R.styleable.BlockEditText_textSize,
+                R.styleable.BlockEditText_fontTextSize,
                 textSize
         )
         hintTextSize = a.getDimension(

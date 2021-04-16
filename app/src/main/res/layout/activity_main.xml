@@ -64,7 +64,7 @@
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:inputType="Integer"
                 app:numberOfBlock="4"
-                app:textSize="18sp" />
+                app:fontTextSize="18sp" />
 
 
             <com.infideap.blockedittext.BlockEditText

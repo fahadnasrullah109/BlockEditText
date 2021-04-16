@@ -4,7 +4,7 @@
         <attr name="numberOfBlock" format="integer" />
         <attr name="defaultLength" format="integer" />
         <attr name="separatorPadding" format="dimension" />
-        <attr name="textSize" format="dimension" />
+        <attr name="fontTextSize" format="dimension" />
         <attr name="hintTextSize" format="dimension" />
         <attr name="separatorTextSize" format="dimension" />
         <attr name="cardIconSize" format="dimension" />
