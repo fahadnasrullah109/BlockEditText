@@ -54,7 +54,7 @@
                 app:inputType="Integer"
                 app:numberOfBlock="4" />
 
-            <com.infideap.blockedittext.BlockEditText
+           <!-- <com.infideap.blockedittext.BlockEditText
                 android:id="@+id/blockEditText_tac"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
@@ -64,7 +64,7 @@
                 app:hintTextAppearance="@style/TextAppearance.AppCompat.Medium"
                 app:inputType="Integer"
                 app:numberOfBlock="4"
-                app:fontTextSize="18sp" />
+                app:fontTextSize="18sp" />-->
 
 
             <com.infideap.blockedittext.BlockEditText
