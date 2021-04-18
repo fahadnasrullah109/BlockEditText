@@ -110,7 +110,7 @@
                 android:layout_marginTop="16dp"
                 android:background="#aaa" />
 
-            <com.infideap.blockedittext.BlockEditText
+            <!--<com.infideap.blockedittext.BlockEditText
                 android:id="@+id/blockEditText_custom_font"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
                 app:hint="Custom Font"
                 app:inputType="Integer"
                 app:numberOfBlock="4"
-                app:shiftPosition="false" />
+                app:shiftPosition="false" />-->
             <com.infideap.blockedittext.BlockEditText
                 android:id="@+id/blockEditText_custom_text_color"
                 android:layout_width="match_parent"

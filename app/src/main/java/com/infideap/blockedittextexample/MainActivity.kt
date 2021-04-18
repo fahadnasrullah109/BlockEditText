@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
         icNumberEditText.setLengthAt(2, 4)
 
 
-        val customFontEditText: BlockEditText = findViewById(R.id.blockEditText_custom_font)
+        //val customFontEditText: BlockEditText = findViewById(R.id.blockEditText_custom_font)
 //        customFontEditText.setTypeface(Typeface.createFromAsset(resources.assets, "Quicksand-Light.ttf"))
 
         val customTextColorEditText: BlockEditText = findViewById(R.id.blockEditText_custom_text_color)
