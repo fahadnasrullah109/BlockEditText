@@ -19,7 +19,6 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
-import androidx.core.util.keyIterator
 import androidx.core.view.ViewCompat
 import com.app.infideap.stylishwidget.util.Utils
 import com.app.infideap.stylishwidget.view.AEditText
@@ -38,6 +37,7 @@ class BlockEditText : FrameLayout {
     private var inputTextColor: ColorStateList? = null
     private var typeface: Typeface? = null
     private var watcher: TextWatcher? = null
+    private var blockEditWatcher: BlockEditWatcher? = null
     private var callback: ActionMode.Callback? = null
     private val editTexts = SparseArray<AEditText?>()
     private var separator: Char? = null
@@ -321,6 +321,10 @@ class BlockEditText : FrameLayout {
 
     fun setTextChangedListener(watcher: TextWatcher?) {
         this.watcher = watcher
+    }
+
+    fun setBlockTextChangeListener(listener: BlockEditWatcher?) {
+        this.blockEditWatcher = listener
     }
 
     fun setCustomInsertionActionModeCallback(callback: ActionMode.Callback?) {
@@ -731,6 +735,7 @@ class BlockEditText : FrameLayout {
                 }
                 sequence = text!!
                 this@BlockEditText.onTextChanged(sequence, this.start, this.before, sequence.length)
+                this@BlockEditText.blockEditWatcher?.onBlockTextChanged(sequence, index)
             }
 
             override fun afterTextChanged(s: Editable) {
