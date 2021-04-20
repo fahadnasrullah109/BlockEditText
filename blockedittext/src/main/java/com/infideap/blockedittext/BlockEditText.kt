@@ -735,7 +735,7 @@ class BlockEditText : FrameLayout {
                 }
                 sequence = text!!
                 this@BlockEditText.onTextChanged(sequence, this.start, this.before, sequence.length)
-                this@BlockEditText.blockEditWatcher?.onBlockTextChanged(sequence, index)
+                this@BlockEditText.blockEditWatcher?.onBlockTextChanged(editTexts[index]?.text.toString().trim(), index)
             }
 
             override fun afterTextChanged(s: Editable) {

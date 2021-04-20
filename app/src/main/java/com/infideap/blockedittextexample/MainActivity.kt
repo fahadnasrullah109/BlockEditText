@@ -8,9 +8,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
+import android.util.Log
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import com.infideap.blockedittext.BlockEditText
+import com.infideap.blockedittext.BlockEditWatcher
 import com.infideap.blockedittext.CardPrefix
 import com.infideap.blockedittextexample.databinding.ActivityMainBinding
 
@@ -19,6 +21,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(
                 this, R.layout.activity_main)
+        val visaEditText : BlockEditText = findViewById(R.id.blockEditText_visa)
+        visaEditText.setBlockTextChangeListener(object  : BlockEditWatcher{
+            override fun onBlockTextChanged(s: CharSequence?, blockNumber: Int) {
+                Log.e("VisaTextChanged", "[${blockNumber}] -> $s")
+            }
+        })
         val amexEditText: BlockEditText = findViewById(R.id.blockEditText_amex)
         amexEditText.setNumberOfBlock(3)
         amexEditText.setDefaultLength(4)
