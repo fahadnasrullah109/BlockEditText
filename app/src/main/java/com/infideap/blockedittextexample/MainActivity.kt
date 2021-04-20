@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(
                 this, R.layout.activity_main)
-        val visaEditText : BlockEditText = findViewById(R.id.blockEditText_visa)
+        /*val visaEditText : BlockEditText = findViewById(R.id.blockEditText_visa)
         visaEditText.setBlockTextChangeListener(object  : BlockEditWatcher{
             override fun onBlockTextChanged(s: CharSequence?, blockNumber: Int) {
                 Log.e("VisaTextChanged", "[${blockNumber}] -> $s")
             }
-        })
+        })*/
         val amexEditText: BlockEditText = findViewById(R.id.blockEditText_amex)
         amexEditText.setNumberOfBlock(3)
         amexEditText.setDefaultLength(4)
